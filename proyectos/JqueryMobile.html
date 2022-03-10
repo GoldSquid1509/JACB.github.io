@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JqueryMobile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Jquerymobile/css/themes/mitema.css" />
+  	<link rel="stylesheet" href="Jquerymobile/css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="Jquerymobile/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Jquerymobile/themes/DarkPurple.css">
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+		body{
+			background: rgb(255,25,0);
+            background: radial-gradient(circle, rgba(255,25,0,1) 0%, rgba(255,111,0,1) 51%, rgba(255,149,0,1) 100%);
+            font-family: 'Century Gothic';
+		}
+		footer{
+            font-size: 20px;
+            color: rgb(0, 255, 13);
+            text-shadow: 0 0 20px rgb(36, 255, 47);
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+        }
+	</style>
+</head>
+<body align="center">
+	<div data-role="page" id="inicio" data-theme="a" style="background: #2c2c2c;">
+
+		<div data-role="header">
+			<h1>Dota 2</h1>
+			<br>
+			<p>Dota 2 es un videojuego perteneciente al género de Arena de batalla en línea ARTS, también conocido como MOBA, lanzado el 9 de julio del año 2013. El juego fue desarrollado por la empresa Valve Corporation.​​​</p>
+			<br>
+			<img src="imagenes/JqueryMobile/logo.jpg" width="70%" alt="">
+			<br>
+			
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<footer>Chávez Balderrama Juan Alfredo 6AVP</footer>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+					<li><a onclick="goindex()" data-icon="star">Regresar</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="productos" data-theme="a">
+		<div data-role="header">
+			<h1>Productos</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+			<h2>Listado de productos</h2><hr>
+			<ol data-role="listview">
+				<li>Skins</li>
+				<li>Heroes</li>
+				<li>Pase de Batalla</li>
+				<li>Gestos</li>
+			</ol>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<footer>Chávez Balderrama Juan Alfredo 6AVP</footer>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+					<li><a onclick="goindex()" data-icon="star">Regresar</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="carrito" data-theme="a">
+		<div data-role="header">
+			<h1>Carrito de Compras</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+			<h2>Carrito de compras</h2><hr>
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<a href="#"><img src="imagenes/JqueryMobile/skins.jpg" alt=""><h2>Skins</h2></a>
+				</li>
+				<li>
+					<a href="#"><img src="imagenes/JqueryMobile/tusk.jpg" alt=""><h2>Heroe</h2></a>
+				</li>
+				<li>
+					<a href="#"><img src="imagenes/JqueryMobile/pase.png" alt=""><h2>Pase de Batalla</h2></a>
+				</li>
+				<li>
+					<a href="#"><img src="imagenes/JqueryMobile/gestos.jpg" alt=""><h2>Gestos</h2></a>
+				</li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<footer>Chávez Balderrama Juan Alfredo 6AVP</footer>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+					<li><a onclick="goindex()" data-icon="gear">Regresar</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+<script>
+	function goindex(){
+		window.location.href = "../index.html";
+	}
+</script>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<title>Práctica jQuery</title>
+	<style>
+		body{
+			background: rgb(255,25,0);
+            background: radial-gradient(circle, rgba(255,25,0,1) 0%, rgba(255,111,0,1) 51%, rgba(255,149,0,1) 100%);
+            font-family: 'Century Gothic';
+		}
+		footer{
+            position: absolute;
+            bottom: 50px;
+            font-size: 20px;
+            color: rgb(0, 255, 13);
+            text-shadow: 0 0 20px rgb(36, 255, 47);
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+        }
+		
+		.texto {
+			background-color: lightblue;
+			border: 1px solid black 
+		}
+		.texto2 { 
+			background-color: lightgreen; 
+			border: 1px solid black; 
+			font-size: 30px
+		}
+		.regresar{
+			position: absolute;
+            bottom: 0;
+		}
+		img{
+			max-width: 200px;
+			max-height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="titulo" style="color: white; text-shadow: 0 0 20px rgb(117, 223, 255); text-align: center;">Práctica jQuery.js</h1><hr>
+	<button id="boton" class="btn btn-primary btn-block">Dale Click Porfa</button>
+	<div class="container" style="min-width: 100%; text-align: center;">
+		<div class="row">
+			<div class="col-3"></div>
+			<div id="e1" class="col-2" style="display: none;"><img src="imagenes/jquery/1.png" alt=""></div>
+			<div id="e2" class="col-2" style="display: none;"><img src="imagenes/jquery/2.webp" alt=""></div>
+			<div id="e3" class="col-2" style="display: none;"><img src="imagenes/jquery/3.png" alt=""></div>
+			<div class="col-3"></div>
+		</div>
+	</div>
+
+	<p class="texto2" id="lista" style="text-align: center;">Mire esto Profe</p>
+	<p class="texto" id="contenido" style="display: none; text-align: center;">No es perfecto?</p>
+	<footer>Chávez Balderrama Juan Alfredo 6AVP</footer>
+	<a href="../index.html" class="btn btn-block btn-dark regresar"> ⬅️ Regresar</a>
+</body>
+</html>
+<script>
+	$(document).ready(function () {
+		$("#titulo").click(function () {
+			$(this).hide();
+		})
+
+		$("#boton").click(function () {
+			$("#e1").fadeToggle(4000);
+			$("#e2").fadeToggle(1000);
+			$("#e3").fadeToggle(3000);
+
+		})
+
+		$("#lista").click(function () {
+			$("#contenido").fadeToggle(1000);
+		})
+
+	});
+</script>
